@@ -30,5 +30,4 @@ public interface Function<I, O> {
             }
         };
     }
-
 }
