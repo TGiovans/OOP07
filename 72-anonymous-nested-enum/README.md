@@ -11,7 +11,7 @@ tramite una classe anonima.
 Si osservi `TestFunctionalLibrary` per trovare esempi di classi anonime che implementano function.
 Ci si prepari a rispondere alla seguente domanda al momento della correzione:
 > perché `identity()` è un metodo, e non una costante `public static`?
-
+*implementandolo come metodo, possiamo generalizzare i generici, in maniera che il chiamante non debba necessariamente passare un tipo "T".*
 ## Parte 2: sfruttare le classi anonime per costruire una libreria funzionale
 
 Si implementino le funzioni di utilità non ancora implementate all'interno di `Transformers`.
