@@ -64,7 +64,6 @@ class TestStrictBankAccount {
             fail("Failure: user has gained cash by withdrawing negative.");
         } catch (IllegalArgumentException e) {
             assertEquals(balanceBeforeWD, bankAccount.getBalance());
-            System.out.println("Correct: user is trying to un-withdraw, which is not permitted unless explicitly specified it is a dposit.");
         }
     }
 
@@ -78,7 +77,6 @@ class TestStrictBankAccount {
             bankAccount.withdraw(mRossi.getUserID(),balanceBeforeWD+5.0);
         } catch (IllegalArgumentException e) {
             assertEquals(balanceBeforeWD, bankAccount.getBalance());
-            System.out.println("Correct: user is trying to withdraw more than their account has.");
         }
     }
 }
